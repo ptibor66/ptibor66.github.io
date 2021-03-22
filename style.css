@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+    margin: 30;
+    background: linear-gradient(180deg, rgba(60,150,10,1) 46%, rgba(49,226,66,0.9444152661064426) 95%);   
+   
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+header {
+    background: url(/css/img/HORGÁSZ-HÁTTÉR.jpg);
+    color: rgb(189, 156, 9);
+    font-family: "lobster";
+    font-size: 80px;
+    font-weight: 1500;
+    padding: 80px 60px;
+    text-shadow: 0 0 20px rgb(0,0,0,.9);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    background: #333030;
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+nav {
+   width: 25%;
+   float: left;
+   background: linear-gradient(0deg, rgba(47,119,5,1) 14%, rgba(4,74,22,0.9948354341736695) 90%);;
+}
+
+nav h4 {
+    color: aqua;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+nav a:hover {
+    padding: 15px;
+    background:rgb(100, 116, 103);
+}
+
+nav ul {
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+}
+
+nav ul li {
+    border-bottom: 1px dashed rgba(255,255,255,2);
+}
+
+main {
+   width: 75%;
+   background: rgba(255, 255, 255, 0.900);
+   float: left;
+   padding: 30px;
+}
+
+main p {
+    line-height: 23px;
+}
+
+main img {
+    float: left;
+    padding: 10px;
+   
+}
+
+.float-left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #AAAFB2;
+}
+
+footer a {
+    color: rgb(48, 77, 10);
+}
+
+footer a:hover {
+    background-color:rgb(255,255,255,);
+    background:rgb(136, 243, 155);
+}
+
+footer .left {
+      float: left
+}
+
+footer .right {
+    float: right
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h1 span {
+    font-size: 50px;
+    background: #3d8a12;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-left: 10px solid  #3d8a12;
+    border-right:   10px solid  #3d8a12;
+    border-bottom:  7px solid  #3d8a12;
+    line-height: 65px;
+}
+
+h3 {
+    font-size: 50px;
+    background: #3d8a12;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: white;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    border-left: 10px solid  #3d8a12;
+    border-right:   10px solid  #3d8a12;
+    border-bottom:  7px solid  #3d8a12;
+    line-height: 65px;
+}
+
+.container {
+    color: white;
+}
+
+
+
+

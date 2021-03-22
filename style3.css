@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+    margin: 0;
+    background: url(/css/img/ABSZTRAKT-ZÖLD.jpg);
+    font-family: sans-serif;
+    color: aqua;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+h1 {
+    font-family: "oswald";
+    color: rgb(6, 75, 36);
+}
+
+fieldset {
+    box-shadow:  0 0 35px rgba(241, 129, 129, 0.9);
+}
+
+nav {
+    background: rgba(190,0,0,.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,.8);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+main {
+    position: "static";
+    color: black;
+    text-shadow: 0 0 20px rgba(238, 241, 236, 0.9);
+    background: rgb(240, 27, 27);
+    padding: 40px;
+    margin: 100px;
+}
+
+fieldset {
+    background: rgb(15, 184, 15);
+    border-top: solid 10px  rgba(255,255,255,.3);
+    padding: 40px;
+}
+
+fieldset a:hover {
+    background: greenyellow;
+}
+
+
+

@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    
+}
+
+header {
+    background: url(/css/img/HORGÁSZ-HÁTTÉR.jpg);
+    color: rgb(189, 156, 9);
+    font-family: "lobster";
+    font-size: 80px;
+    font-weight: 1500;
+    padding: 80px 60px;
+    text-shadow: 0 0 20px rgb(0,0,0,.9);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h4 {
+    color: aqua;
+}
+
+nav {
+    background: rgba(190,0,0,.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,.8);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+.content {
+    background: #333030;
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main {
+    background: gray;
+    padding: 40px;
+    color: rgb(10, 6, 6);
+}
+
+.box {
+    /*flex: 1;*/
+    min-width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0 0 10px 0;
+    margin: 0 10px 20px 10px;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: #ddd;
+}
+
+div .clear {
+    clear: both;
+}
+
+div#container {
+    width: 600px;
+    margin: 100px auto;
+    background: white;
+    padding: 10px;
+    -webkit-box-shadow: 5px 5px 0 #9999;
+    -moz-box-shadow:5px 5px 0 #9999;
+    box-shadow: 5px 5px 0 #9999;
+}
+
+div#gallery {
+    width: 600px;
+    height: 400px;
+}
+
+div#gallery img {
+    position: absolute;
+}
+
+div#navigation {
+    padding: 10px 0;
+}
+
+div#navigation-left {
+    float: left;
+    width: 140px;
+}
+
+div#navigation-title {
+    float: left;
+    width: 320px;
+    text-align: center;
+}
+
+div#navigation-right {
+    float: right;
+    width: 140px;
+    text-align: right;
+}
+
+div#current-image-title {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+
+

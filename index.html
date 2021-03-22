@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/regist.css">
+    <img width="250" src="css/img/LOGO.png">
+    <p style="background-color: #ffff00; padding: 20px;
+    border-width: 10px; border-color: #125322; border-style: solid;
+    margin: 20px">
+        <marquee>REGISZTRÁCIÓ ÉS BELÉPÉS</marquee>
+        <title>Regisztráció</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-register">
+            <div class="nav-buttons">
+                <button id="registerBtn">1. Regisztráció</button>
+                <button id="loginBtn" class='active'>2. Belépés</button>
+
+            </div>
+            <div class="form-group">
+
+
+                <form action="" id="loginform">
+                    <label for="username">Felhasználónév</label>
+                    <input type="text" id="username">
+                    <label for="password">Jelszó</label>
+                    <input type="text" id="password">
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+                <form action="/kepek.html" id="registerform">
+                    <label for="fullname">Teljes Név</label>
+                    <input type="text" id="fullname">
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                    <label for="passwword">Jelszó</label>
+                    <input type="text" id="password">
+                    <label for="confirmpassword">Jelszó megerősítése</label>
+                    <input type="text" id="confirmpassword">
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+            <div id="forgot">
+                <a href="">Elfelejtetted a jelszavad?</a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var loginBtn = document.getElementById("loginBtn");
+        var registerBtn = document.getElementById("registerBtn");
+        var loginform = document.getElementById("loginform");
+        var registerform = document.getElementById("registerform");
+        var forgot = document.getElementById("forgot");
+
+        registerBtn.onclick = function () {
+            registerform.style.left = '0px';
+            registerform.style.opacity = '1';
+            loginform.style.left = '-500px';
+            loginform.style.opacity = '0';
+            forgot.style.left = '-500px';
+            forgot.style.opacity = '0';
+            registerBtn.classList.add('active');
+            loginBtn.classList.remove('active');
+
+        }
+
+        loginBtn.onclick = function () {
+            loginform.style.left = '0px';
+            loginform.style.opacity = '1';
+            forgot.style.left = '0px';
+            forgot.style.opacity = '1';
+            registerform.style = '500px';
+            loginBtn.classList.add('active');
+            registerBtn.classList.remove('active');
+            registerform.style.opacity = '0';
+        }
+
+        forgot.onclick = function () {
+            alert('Nincs jelentősége. Menj a REGISZTRÁCIÓ-ra, és SUBMIT !');
+        }
+
+        loginBtn.onclick = function () {
+            alert('Menj a REGISZTRÁCIÓ-ra, és SUBMIT !')
+        }
+
+        loginform.onclick = function () {
+            alert('Menj a REGISZTRÁCIÓ-ra, és SUBMIT !')
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
