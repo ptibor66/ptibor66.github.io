@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background : black;
+    background-size:  cover;
+    background-position:center center;
+    
+}
+
+h1 { 
+    text-align: center;
+    color: lavender;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1:hover {
+    background: none;
+}
+
+a {
+    color: black;
+}
+
+.wapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    background: none;
+}
+
+.content::after ,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav { 
+    background: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: ghostwhite;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: darkgrey;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+#logo {
+    float: right;
+}
+
+#table { 
+    color: lavender;
+    padding: 10px;
+    max-width: 500px;
+    margin: 5px auto;
+    background: gray;
+}
+
+#table a:hover {
+    background: lightsteelblue;
+    padding: 25px;
+}
+
+tfoot {
+    color: black;
+}
+
+
