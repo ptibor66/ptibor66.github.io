@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: url(/img/hullám.gif);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box {
+    margin: 0;
+}
+
+main {
+    background-color: none;
+}
+
+#marquee {
+    margin: 30px;
+}
+
+h1 { 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+#h1-center {
+    text-align: center;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+h5 {
+    color: whitesmoke;
+}
+
+p {
+    color: lavender;
+}
+
+ul li {
+    color: lavender;
+}
+
+.wapper { 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    background: url(/img/HORGÁSZ-HÁTTÉR.jpg);
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {
+    height: 60px;
+    background: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: wheat;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(245, 245, 245, 0.507);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+header {
+    background-image: url(/img/ORLY-HARCSA.jpg);
+}
+
+#table {
+    padding: 5px;
+    max-width: 700px;
+    margin: 5px auto;
+    background: none;
+}
+
+#table img {
+    padding: 5px;
+}
+
+#table-1 {
+    padding: 5px;
+    max-width: 700px;
+    margin: 5px auto;
+    background: none;
+}
+
+#table {
+    padding: 5px;
+    float: none;
+}
+
+h1 #logo {
+    float: left;
+}
+
+
+#logo {
+    float: right;
+}
+
+
+#fader {
+    background: lightskyblue;
+    margin: 30px;
+    padding: 30px;
+}
+
+#carousel {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.carousel {
+    max-width: 500px;
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 30PX 40px -20px lightgray;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(orientation:portrait) {
+    .carousel {
+        height: 30vh
+    }
+}
+
+.carousel div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+}
+
+.carousel div:nth-child(1) {
+    background-image: url(/img/TERÍTÉK.jpg);
+    animation-delay: 2s
+}
+
+
+.carousel div:nth-child(2) {
+    background-image: url(/img/HALÁSZLÉ.jpg);
+    animation-delay: 8s
+}
+
+.carousel div:nth-child(3) {
+    background-image: url(/img/HALKOCSONYA.gif);
+    animation-delay: 10s
+}
+
+.carousel div:nth-child(4) {
+    background-image: url(/img/KESZEG-ROSTON.jpg);
+    animation-delay: 12s
+}
+
+.carousel div:nth-child(5) {
+    background-image: url(/img/ORLY-HARCSA.jpg);
+    animation-delay: 14s
+}
+
+.carousel div:nth-child(6) {
+    background-image: url(/img/RÁC-PONTY.jpg);
+    animation-delay: 16s
+}
+
+.carousel div:nth-child(7) {
+    background-image: url(/img/SÜLLŐ-EGÉSZBEN.jpg);
+    animation-delay: 18s
+}
+
+.carousel div:nth-child(8) {
+    background-image: url(/img/SÜLT-KESZEG.jpg);
+    animation-delay: 20s
+}
+
+.fader div {
+    animation: fade 16s infinite
+}
+
+@keyframes fade {
+    5% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.slider div {
+    left: -100;
+    animation: slide 12s infinite
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+        left: -100%
+    }
+
+    6% {
+        left: 0;
+    }
+
+    34.5% {
+        left: 0;
+    }
+
+    39.5% {
+        opacity: 1;
+        left: 100%;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.carousel.slider {
+    animation: carousel-fade-in 2s forwards;
+}
+
+@keyframes carousel-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+button {
+    width: 120px;
+    margin: 3px;
+    color: rgb(89, 228, 181);
+    padding: 5px 10px;
+    background-color: rgb(47, 38, 182);
+    border: rgb(54, 46, 46) 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 129, 182);
+    color: white;
+}
+
+button:active {
+    box-shadow: 0px 1px 7px black;
+}
+
+tfoot {
+    background: none;
+    color: rgb(178, 238, 240);
+}
