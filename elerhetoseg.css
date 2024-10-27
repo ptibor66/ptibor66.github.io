@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: #2F4F4F;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+header {
+    background-image: url(/img/HORGÁSZ-HÁTTÉR.jpg);
+}
+
+h1 {
+    color: lavender;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#h1-center {
+    text-align: center;
+}
+
+#h1-marquee {
+    text-align: center;
+}
+
+h1:hover {
+    background: none;
+}
+
+a {
+    color: rgb(42, 201, 193);
+}
+
+.wapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {background: url(/img/SZÜRKE\ HULLÁM\ HÁTTÉR.jpg);
+    
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {
+    height: 60px;
+    background: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: #283747; 
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(211, 211, 211, 0.411);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+#logo {
+    float: right;
+}
+
+#table {
+    color: lavender;
+    padding: 10px;
+    width: 350px;
+    margin: 5px auto;
+    background: none;
+}
+
+#table a:hover {
+    background: lightsteelblue;
+    padding: 25px;
+}
+
+#table-2 {
+    padding: 5px;
+    max-width: 500px;
+    background: none;
+    margin: 5px auto;
+}
+
+button {
+    width: 120px;
+    margin: 3px;
+    float: left;
+    color: lavender;
+    padding: 5px 10px;
+    background-color: rgb(47, 38, 182);
+    border: rgb(54, 46, 46) 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgb(30, 167, 209);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 129, 182);
+    color: white;
+}
+
+button:active {
+    box-shadow: 0px 1px 7px rgb(60, 192, 233);
+}
+
+tfoot {
+    background: none;
+    text-align: center;
+    color: rgb(178, 238, 240);
+}
