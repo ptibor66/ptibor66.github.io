@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: gray;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(14, 12, 12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1:hover {
+    background: none;
+}
+
+a {
+    color: rgb(35, 24, 83);
+}
+
+.wapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {
+    height: 60px;
+    background: #fdf5ae;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: #272726; 
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgb(212, 181, 94);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+#logo {
+    float: right;
+}
+
+#table {
+    color: rgb(78, 77, 77);
+    padding: 10px;
+    width: 800px;
+    margin: 5px auto;
+    background: #fdf5ae;
+}
+
+#table a:hover {
+    color: green;
+    background: none;
+    padding: 25px;
+}
+
+#table a {
+    color: blue;
+}
+
+#table-2 {
+    padding: 5px;
+    max-width: 500px;
+    background: none;
+    margin: 5px auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 129, 182);
+    color: white;
+}
+
+button:active {
+    box-shadow: 0px 1px 7px rgb(60, 192, 233);
+}
+
+button:hover {
+    background-color: #fce8b1;
+}
+
+button {
+    cursor: pointer;
+    margin: 30px;
+    width: 120px;
+    float: left;
+    color: rgb(15, 15, 15);
+    padding: 5px 10px;
+    background-color: #C6B644;
+    border: rgb(156, 142, 142) 2px solid;
+    border-radius: 7px;
+    box-shadow: 3px 3px 0px rgb(163, 164, 165);
+}
+
+table {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fdf5ae;
+}
+
+#cta {
+    position: relative;
+}
+
+#cta-gomb {
+    padding: 0px;
+    margin: 0px 305px;
+    float: left;
+}
+
