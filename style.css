@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    /*theme colors*/
+    --text-gray: #3F4954;
+    --bg-color: #0e0d0d;
+
+    /*theme font-family*/
+    --lexend: 'lobster';
+    --livvic: 'Livvic', sans-serif;
+
+    /*gradient colors*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*010 Winter Neva*/
+}
+
+/*..............navbar.............*/
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-black {
+    font-weight: bold;
+    color: var(--bg-color);
+}
+
+body {
+    margin: 0%;
+    background: url(https://st.depositphotos.com/1002914/2675/i/450/depositphotos_26755685-stock-photo-fishing-in-lake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    opacity: 80%;
+    padding: 0 2rem;
+    background: url(https://play-lh.googleusercontent.com/4y1FoQy8A6svxMc61GF6Wz14SExGEkdSkb4q6AmYvCSQm8Cy_9wVNl-fAIMLXyxBsj_h);
+    position: relative;
+    justify-content: space-between;
+    height: 0rem;
+    min-height: 11vh;
+    overflow-y: hidden;
+    transition: height 1s cubic-bezier(0.26, -0.01, 0, 1.01);
+}
+
+nav .nav-brand a {
+    display: block;
+    padding: 1rem 0;
+    font-family: var(--lexend);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.text-black {
+    color: rgb(21, 21, 136);
+}
+
+.text-black h4 {
+    color: rgb(21, 21, 136);
+    padding: 12px;
+    float: right;
+}
+
+nav .nav-items {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav .nav-items .nav-link {
+    padding: 1.3rem 1rem;
+    font-family: var(--livvic);
+    font-size: 1.1rem;
+}
+
+nav .nav-items .nav-link:hover {
+    background: none;
+}
+
+nav .nav-items .nav-link:hover a {
+    color: rgb(8, 70, 11);
+}
+
+nav .social {
+    padding: 1.4rem 0;
+}
+
+nav .social i {
+    color: #120396;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+nav .social i:hover {
+    background: #038eff;
+}
+
+nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    /*background: white;*/
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.icon,
+.icon::before,
+.icon::after {
+    position: relative;
+    width: 10px;
+    border: 2px solid var(--text-gray);
+    border-radius: 3rem;
+    display: inline-block;
+    transition: all .8s ease;
+    transition-property: width, left;
+}
+
+.icon::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    left: -12px;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -2px;
+}
+
+.text-click,
+.toggle-click::before,
+.toggle-click::after {
+    width: 20px;
+}
+
+.toggle-click::before {
+    left: -2px;
+}
+
+nav .toggle-collapse .toggle-icons i {
+    font-size: 1, 4rem;
+}
+
+@media only screen and (max-width:800px) {
+    nav .nav-items {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column !important;
+        display: block !important;
+    }
+
+    nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+
+
+.row {
+    padding: 60px;
+    display: flex;
+    height: 88%;
+    margin-right: 50px;
+}
+
+p {
+    background: none;
+    text-align: center;
+    color: rgb(12, 12, 12);
+}
+
+#font {
+    font-size: 140%;
+    color: white;
+    text-align: left;
+}
+
+.row h4 {
+
+    color: rgb(36, 36, 36);
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+#home {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 160%;
+    font-weight: bold;
+    font-family: 'oswald';
+    color: rgb(250, 248, 248);
+}
+
+#pos h4 {
+    font-family: 'oswald';
+    color: #fcf9f9c2;
+}
+
+h5 {
+    color: white;
+    text-shadow: 0 0 5px #999;
+}
+
+button {
+    font-family: 'oswald';
+    font-weight: bold;
+    width: 180px;
+    color: #fcf9f9;
+    font-size: 17px;
+    padding: 12px 0;
+    background: linear-gradient(to right, rgb(15, 2, 133), rgb(71, 165, 202));
+    border: 0;
+    border-radius: 0 60px;
+    outline: none;
+    margin-top: 10px;
+    box-shadow: 3px 3px 0px rgb(73, 73, 73);
+    border: 1px solid rgb(253, 253, 253);
+    cursor: pointer;
+}
+
+button:hover {
+    /*background: linear-gradient(rgb(49, 49, 49), rgb(150, 149, 149));*/
+    background: linear-gradient(rgb(1, 9, 126), rgb(91, 148, 253));
+}
+
+#alternative-button {
+    font-family: "oswald";
+    width: 180px;
+    font-size: 17px;
+    font-weight: 200;
+    background: lavender;
+    border-radius: 0 60px;
+    box-shadow: 3px 3px 0px rgb(73, 73, 73);
+    border: 1px solid rgb(129, 129, 129);
+    color: rgb(12, 12, 12);
+    opacity: 60%;
+}
+
+#alternative-button:hover {
+    background: linear-gradient(rgb(41, 50, 185), rgb(91, 148, 253));
+}
