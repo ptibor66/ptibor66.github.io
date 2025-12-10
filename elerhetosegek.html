@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/elerhetosegek.css">
+    <title>ELÉRHETŐSÉGEK</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content"></div>
+
+        <header>
+
+            <div class="navbar">
+                <div class="logo"></div>
+
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="/index.html">-Home-</a></li>
+                    <li><a href="/kepek.html">Képek-Leírások</a></li>
+                    <li><a href="/receptek.html">Receptek</a></li>
+                    <li><a id="color" href="/elerhetoseg.html">Elérhetőségek</a></li>
+                </ul>
+                <a href="#" class="action_btn">Menü</a>
+                <div class="toggle_btn">
+                    <i class="bi bi-list"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="/index.html">-Home-</a></li>
+                <li><a href="/kepek.html">Képek-Leírások</a></li>
+                <li><a href="/receptek.html">Receptek</a></li>
+                <li><a id="color" href="/elerhetoseg.html">Elérhetőségek</a></li>
+                <li><a href="#" class="action_btn">Menü</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                }
+
+            </script>
+
+        </header>
+
+    </div>
+
+    <marquee>
+        <img src="/images/HORG-IKON.png" width="300px" height="200px">
+        <h1>ELÉRHETŐSÉGEIM </h1>
+    </marquee>
+
+    <table id="table">
+        <tr>
+            <th>
+                <div class="right">
+                    <fieldset>
+                        <legend>
+                            <h3>
+                                <br>FACEBOOK-OLDALAM
+                            </h3>
+                        </legend>
+
+                        <fieldset>
+                            <h5>Facebook Oldalam</h5>
+                            <h4>KLIKKELJ a FOTÓRA ! <br></h4>
+                            <a target="blank" href="https://www.facebook.com/profile.php?id=100079171039086">
+
+                                <img width="70" src="/images/img/ÉN-FOTO.jpg" alt="Profilkép">
+                            </a>
+                        </fieldset>
+
+                        <h4>Facebook Oldalam<br>
+                            MEGTEKINTÉSÉHEZ, KLIKKELJ
+                        </h4>
+
+                        <a href="https://www.facebook.com/profile.php?id=100079171039086">Ide !</a>
+
+
+                    </fieldset>
+                </div>
+
+
+                <div class="right">
+                    <fieldset>
+                        <legend>
+                            <h3>
+                                <br>GITHUB.COM
+                            </h3>
+                        </legend>
+
+                        <fieldset>
+                            <h5>Github-Oldalam</h5>
+                            <h4>KLIKKELJ A FOTÓRA !<br></h4>
+                            <a target="blank" href="https://github.com/ptibor66/ptibor66.github.io">
+
+                                <img width="70" src="/images/img/git-profil.JPG" alt="Github-Profilkép">
+                            </a>
+                        </fieldset>
+
+                        <h4>Github-Oldalam<br>
+                            MEGNÉZHETED
+                        </h4>
+
+                        <a href="https://github.com/ptibor66/ptibor66.github.io">Itt</a>
+
+
+                    </fieldset>
+                </div>
+
+            </th>
+        </tr>
+    </table>
+
+
+    <h1 id="h1-center">Email:<br>
+        <h2>nokiatibor@gmail.com</h2>
+    </h1>
+
+    <div class="wapper"></div>
+    <div class="">
+        <table id="table-2">
+            <tr>
+                <th>
+                    <a href="/index.html"><button class="kis-gomb">VISSZA</button></a>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wapper">
+        <div class="">
+            <table id="table">
+                <tr>
+                    <th>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    &copy; 2022. Hungary, Szolnok. ( Papp Tibor ) <strong>Minden jog fenntartva !</strong>
+                                </td>
+                            </tr>
+
+                        </tfoot>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

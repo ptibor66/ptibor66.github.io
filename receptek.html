@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/receptek.css">
+    <title>RECEPTEK</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content"></div>
+
+        <header>
+
+            <div class="navbar">
+                <div class="logo"></div>
+
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="/index.html">-Home-</a></li>
+                    <li><a href="/kepek.html">Képek-Leírások</a></li>
+                    <li><a id="color" href="/receptek.html">Receptek</a></li>
+                    <li><a href="/elerhetosegek.html">Elérhetőségek</a></li>
+                </ul>
+                <a href="#" class="action_btn">Menü</a>
+                <div class="toggle_btn">
+                    <i class="bi bi-list"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="/index.html">-Home-</a></li>
+                <li><a href="/kepek.html">Képek-Leírások</a></li>
+                <li><a id="color" href="/receptek.html">Receptek</a></li>
+                <li><a href="/elerhetosegek.html">Elérhetőségek</a></li>
+                <li><a href="#" class="action_btn">Menü</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                }
+
+            </script>
+        </header>
+
+    </div>
+
+    <div>
+        <marquee id="">
+            <img src="/images/HORG-IKON.png" width="300px" height="200px">
+            <h1>Receptek</h1>
+        </marquee>
+    </div>
+
+    <div class="wrapper">
+        <div class="">
+
+            <table>
+                <div class="carousel fader" id="carousel">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <main>
+            <div class="recipes">
+                <div class="recipe-box">
+                    <fieldset><a target="blank" href="/images/img/SÜLT-KESZEG.jpg"><img
+                                src="/images/img/KESZEG-ROSTON.jpg" width="270px" alt="Keszeg roston"></a>
+                        <h2>Keszeg roston</h2>
+
+
+                        <h5>ELKÉSZÍTÉS :</h5><br>
+                        <p>A keszegeket megtisztítjuk, sűrűn bevagdossuk, bekenjük olajjal, és beszórjuk a
+                            fűszerkeverékkel. A rostélyra fektetjük a kaporszálakat, erre a halakat, és mérsékelt
+                            tűz felett
+                            kb.
+                            20 percig sütjük, közben pár csepp olajjal gyakran locsolgatjuk.</p>
+                    </fieldset>
+                </div>
+                <div class="recipe-box">
+                    <fieldset><a target="blank" href="/images/img/RÁC-PONTY.jpg"><img
+                                src="/images/img/RÁC-PONTY.jpg" alt="Rácponty"></a>
+                        <h2> Rácponty</h2>
+
+                        <p>
+                        <h5>Hozzávalók :</h5></br>
+
+                        <ul>
+                            <li>1 egész ponty,</li>
+                            <li>1 kg burgonya,</li>
+                            <li>1 fej vöröshagyma, vagy zöldhagyma</li>
+                            <li>1 fej fokhagyma</li>
+                            <li>25 dkg zöldpaprika, paradicsom</li>
+                            <li>10 dkg füstölt szalonna,</li>
+                            <li>2 dl tejföl,</li>
+                            <li>só</li>
+                        </ul>
+                        <h5>ELKÉSZÍTÉS :</h5><br>
+
+                        <p>A pontyot megtisztítjuk, majd 2 centiméterenként beirdaljuk, és a sütés előtt fél órával
+                            megsózzuk. A burgonyát megtisztítjuk, és nagyobb kockára vágjuk. A halat egy tálba vagy
+                            tepsibe
+                            helyezzük, és az irdalásokba vékony füstöltszalonna-csíkokat teszünk. Mellé rakjuk a
+                            burgonyát,
+                            tetejére szeleteljük a paradicsomot, a zöldpaprikát, a hagymát és a fokhagymát, végül
+                            ráöntjük a
+                            tejfölt. Fél óra hosszat sütjük közepesen meleg sütőben, majd erősebb fokozaton
+                            megpirítjuk.
+                        </p>
+                        </fielset>
+                </div>
+
+                <div class="recipe-box">
+
+                    <fieldset>
+                        <a target="blank" href="/images/img/HALÁSZLÉ.jpg"><img
+                                src="/images/img/HALÁSZLÉ.jpg" alt="Tiszai halászlé"></a>
+                        <h2>Tiszai halászlé</h2>
+                        <p>
+                        <h5>ELKÉSZÍTÉS :</h5><br>
+                        <p>Régi receptek tanúsága szerint nem különbözött túlságosan a dunaitól, mai, passzírozott
+                            (alaplével készült) változata tehát csak menet közben alakult ki. Egy négyszemélyes
+                            adaghoz
+                            50
+                            dekányi megtisztított apróhalat egy kb. 1,2 kilós ponty fejével és farkával felteszünk
+                            főni.
+                            1
+                            nagy fej finomra vágott vöröshagymát adunk hozzá, jó 1 órán át főzzük, átpasszírozzuk.
+                            Közben a
+                            hal törzsét 2,5 centi vastagon fölszeleteljük, besózva, letakarva hűtőszekrénybe rakjuk.
+                            Az
+                            átpasszírozott alaplevet egy kevés vízzel hígítva tűzre tesszük, ha forr, a
+                            pirospaprikával
+                            megszórjuk, azután belerakjuk a besózott halpatkókat, esetleg belsőséget is. 1-2
+                            cseresznyepaprikával tüzesítjük, utánasózzuk, 10-15 percig főzzük.
+                        </p>
+                    </fieldset>
+                </div>
+
+                <div class="recipe-box">
+
+                    <fieldset>
+                        <a target="blank" href="/images/img/ORLY-HARCSA.jpg"><img
+                                src="/images/img/ORLY-HARCSA.jpg" alt="Harcsa Orly módra"></a>
+
+                        <h2>Harcsa Orly módra</h2>
+
+                        <h5>ELKÉSZÍTÉS :</h5><br>
+                        <p>
+                            A harcsa Orly módra önmagában sem rossz, de mi rizibizit és egy frankó remulád mártást
+                            is
+                            csináltunk hozzá.
+
+                            A remulád mártáshoz egy tálba tesszük a majonézt, a tejfölt és a mustárt, majd
+                            belefacsarjuk
+                            a
+                            citrom levét, megsózzuk, megcukrozzuk, és belekeverjük a karikára vágott újhagymát,
+                            illetve
+                            a
+                            finomra vágott petrezselymet és snidlinget. Majd tálalásig hűtőbe tesszük.
+
+                            A rizibizihez felmelegítjük az olajat, majd ráöntjük az átmosott, lecsepegtetett rizst.
+                            Fél-egy
+                            percig pirítjuk, majd felöntjük dupla mennyiségű vízzel. Sózzuk, és kevergetés nélkül
+                            majdnem
+                            készre pároljuk. Mikor minimális víz van már csak alatta, lekapcsoljuk a tűzhelyet, a
+                            rizshez
+                            keverjük a borsót, és lefedjük, hogy a fedő alatt teljesen megpuhuljon a rizs és a borsó
+                            is.
+                            Magába fogja szívni a maradék nedvességet.
+
+                            A halat 5-7 centis darabokra vágjuk. Leitatjuk róla a nedvességet, sózzuk, borsozzuk,
+                            majd
+                            lisztbe forgatjuk. Elkészítjük a panírozó tésztát: a lisztet és a tojást kb. 200 ml
+                            hideg
+                            sörrel
+                            csomómentesre keverjük, majd hozzáadjuk a maradék 100 ml-t is. A halakat belemártjuk a
+                            tésztába,
+                            és 160-170 fokos olajban megsütjük. Mikor megsültek, konyhai papírtörlőre szedjük, és
+                            leitatjuk
+                            róluk a felesleges zsírt.
+
+                            A halat a rizibizivel tálaljuk, és mellé kínáljuk a remulád mártást is.
+                        </p>
+                    </fieldset>
+                </div>
+                
+                <div class="recipe-box">
+
+                    <fieldset>
+                        <a target="blank" href="/images/img/SÜLLŐ-EGÉSZBEN.jpg"><img
+                                src="/images/img/SÜLLŐ-EGÉSZBEN.jpg" alt="Süllő egészben sütve"></a>
+                        <h2> Süllő egészben sütve</h2>
+                        <p>
+                        <h5>Hozzávalók<br>4 főre :</h5>
+                        <ul>
+                            <li>4 süllő (egyenként kb. 40 dkg), </li>
+                            <li>só, </li>
+                            <li>1 burgonya, </li>
+                            <li>kb. 6 evőkanál (12 dkg) finomliszt (még
+                                jobb, ha
+                                a fele kukoricaliszt), </li>
+                            <li>1 púpozott kiskanál jóféle pirospaprika, </li>
+                            <li>1 púpozott kiskanál őrölt
+                                fekete
+                                bors, </li>
+                            <li>1 citrom</li>
+                            <li>a sütéshez: bőven olaj</li>
+                            <li>a díszítéshez: 8 szem meggy</li>
+                        </ul>
+                        <h5>ELKÉSZÍTÉS :</h5>
+                        <p>1.<br> -A süllőt lepikelyezzük, hasát éles késsel felbontjuk, és belső részeit, majd a
+                            kopoltyúját és
+                            a szemét is eltávolítjuk. Uszonyait ollóval körben egy kissé levágjuk. Ezután a halat
+                            többször
+                            váltott hideg vízben megmossuk, szárazra töröljük, majd 2-3 centis közökben – nem túl
+                            mélyen
+
+                            beirdaljuk. Kívül-belül megsózzuk, és letakarva, hűtőben legalább egy órán át
+                            pihentetjük.
+                            <br>2.<br> -Ezután a száját óvatosan szélesre nyitjuk, és egy cikk burgonyát beletömünk.
+                            A
+                            hal
+                            két
+                            végét
+                            megfogjuk és a háta felé hajlítva, kifli alakúra formáljuk.
+                            <br>3.<br> -Egy kihegyezett hurkapálcát átszúrunk a nyakán, és a farkába tűzve
+                            rögzítjük,
+                            esetleg
+                            zsineggel meg is kötjük, hogy az alakját megtartsa. A lisztet a pirospaprikával meg a
+                            borssal
+                            összekeverjük, és a halat ebben jól meghempergetjük.
+                            <br>4.<br>- Akkora serpenyőbe, amekkorában a süllő elfér és meg is tudjuk forgatni, jó
+                            kétujjnyi
+                            olajat
+                            öntünk. Amikor közepesen forró, a halat óvatosan belefektetjük, és oldalanként 5-8
+                            percig,
+                            fedő
+                            nélkül sütjük.
+                            <br>5.<br>- Vigyázva kiemeljük, alaposan lecsöpögtetjük, majd papírtörülközőre vagy
+                            -szalvétára
+                            fektetve
+                            a fölösleges zsiradékot leitatjuk róla. Tálaláskor a szájában lévő burgonya helyére
+                            citromcikket
+                            dugunk. Tálra állítjuk, és két oldalról petrezselymes burgonyával körülbástyázzuk.
+                            <br>6.<br>- A szeme helyét meggyel díszítjük. Tartármártás illik hozzá.
+
+                            <br>Jó tanács :
+                            <br> Ezt a látványos fogást az asztalnál szokás filézni, felszeletelni.
+                            <br> A süllő mellett pisztrángot szokás a leggyakrabban így sütni.
+                            <br> Lisztérzékenyek fűszerezett kukoricalisztben megforgatva süssék.
+
+                            <br>
+                            <br>
+                            Egy adag (tartármártás nélkül): 40 perc + pihentetés
+                            Egy adag: 350 kcal • 41,0 g fehérje • 12,0 g zsír • 19,5 g szénhidrát • 0,0 g rost • 210
+                            mg
+                            koleszterin
+                        </p>
+                    </fieldset>
+                </div>
+                
+                <div class="recipe-box">
+                    
+                    <fieldset>
+                        <a target="blank" href="/images/img/HALKOCSONYA.gif"><img
+                                src="/images/img/HALKOCSONYA.gif" alt="Citromos-boros halkocsonya"></a>
+                        <h2>Citromos-boros halkocsonya</h2>
+                        <p>
+                        <h5>Hozzávalók :</h5>
+                        <ul>
+                            <li>fehérbor</li>
+                            <li>só</li>
+                            <li> színes bors</li>
+                            <li>újhagyma</li>
+                            <li>kapor</li>
+                            <li>citrom</li>
+                            <li>lila hagyma</li>
+                            <li>cukorborsó</li>
+                            <li>sárgarépa</li>
+                            <li>egy csomag zselatin</li>
+                        </ul>
+
+                        <h5>ELKÉSZÍTÉS :</h5>
+
+                        <p>A halakat filé és patkó alakúra vágom, citromos sós vízben puhára főzöm. Miután
+                            megpuhult, a
+                            főzőlét leszűröm, és a zselatinnal összekeverem a csomagoláson található leírás szerinti
+                            módon.
+                            Ízlés szerinti mennyiségű fehérbort adok hozzá, ha szükséges, citromot is. (Ami engem
+                            illet,
+                            a
+                            kissé savanyú, boros ízt kedvelem, számomra ez a legkellemesebb, mivel a hal ízével ez
+                            harmonizál a legjobban.) Amíg a zselatinos lé hűl, a sárgarépát és a cukorborsót
+                            megfőzöm,
+                            majd
+                            a répát egy hullámos pengéjű késsel karikára vágom. A sárgarépát, a borsót, a vékony
+                            cikkekre
+                            vágott lilahagymát és citromot, az újhagymakarikákat, a friss kaprot, a színes borsot, a
+                            halfilét és -szeleteket ízlésesen elrendezem az edényben, majd a kocsonyát ráöntöm, és a
+                            hűtőbe
+                            teszem dermedni. Friss kenyérrel, kevés joghurttal kikevert majonézzel
+                            kínálom. A száraz fehérbor el ne maradjon mellőle!</p>
+                        </fielset>
+
+                        <fieldset>
+                            <h1 id="h1-center">JÓ ÉTVÁGYAT KÍVÁNOK !</h1>
+                        </fieldset>
+
+                        <div class="wapper">
+                            <div class="">
+                                <table id="table">
+                                    <tr>
+                                        <th>
+                                            <a href="/index.html"> <button class="kis-gomb">Vissza</button></a>
+                                            </h3>
+                                            <a href="/elerhetosegek.html"> <button class="kis-gomb">TOVÁBB</button></a>
+                                            </h3>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="wapper">
+                        <div class="">
+                            <table id="table">
+                                <tr>
+                                    <th>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                    &copy; 2022. Hungary, Szolnok. ( Papp Tibor ) <strong>Minden jog fenntartva !</strong>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
