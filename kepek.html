@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
+        integrity="sha512-bUg5gaqBVaXIJNuebamJ6uex//mjxPk8kljQTdM1SwkNrQD7pjS+PerntUSD+QRWPNJ0tq54/x4zRV8bLrLhZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/kepek.css">
+    <title>Képek/Leírások</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content"></div>
+
+        <header>
+
+            <div class="navbar">
+                <div class="logo"></div>
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="/index.html">-Home-</a></li>
+                    <li><a id="color" href="/kepek.html">Képek-Leírások</a></li>
+                    <li><a href="/receptek.html">Receptek</a></li>
+                    <li><a href="/elerhetosegek.html">Elérhetőségek</a></li>
+                </ul>
+                <a href="#" class="action_btn">Menü</a>
+                <div class="toggle_btn">
+                    <i class="bi bi-list"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="/index.html">-Home-</a></li>
+                <li><a id="color" href="/pictures.html">Képek-Leírások</a></li>
+                <li><a href="/receptek.html">Receptek</a></li>
+                <li><a href="/elerhetosegek.html">Elérhetőségek</a></li>
+                <li><a href="#" class="action_btn">Menü</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                }
+
+            </script>
+
+        </header>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+    <div id="pos">
+        <h4>Megtekintések
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=8175499&style=0001&nbdigits=5&type=page&initCount=0"
+                    title="Free Counter" Alt="web counter" border="0" /></a>
+        </h4>
+
+    </div>
+
+    <div>
+        <marquee id="marquee">
+            <img src="/images/HORG-IKON.png" width="300px" height="200px">
+            <h1>Képek/Leírások</h1>
+        </marquee>
+    </div>
+
+
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <div class="">
+                        <div id="fader">
+                            <table id="table-02">
+                                <div class="carousel fader" id="carousel">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                    <h3>Horgászni indulsz ?<br>
+                        Nézd meg, milyen lesz az idő a horgásznapodon !</h3>
+
+                    <p>
+                        <strong> MELGFRONT HATÁSA :</strong><br>
+
+                        A <b>melegfront légnyomáscsökkenést okoz</b>, de a hőmérséklet emelkedik és ez meghozhatja a
+                        horgász
+                        szerencséjét. Hidegfrontbetörés előtt néhány nappal déli-délnyugatira fordul a szél, a
+                        levegő
+                        páratartalma ilyenkor jelentős mértékben megemelkedik. A légnyomás csökken, emiatt gázok
+                        szabadulhatnak fel az iszapból, így csökken a víz oldott oxigéntartalma. A pontyok ilyenkor
+                        gyakran
+                        csoportosulnak a felső vízrétegekbe, és úgynevezett pipálással próbálják a légkör oxigénjét
+                        hasznosítani. Ezt a tevékenységet a partról jól megfigyelhetjük. Ezekben a napokban a halak
+                        táplálkozás szempontjából inaktívvá válnak, így a csalikra se nagyon harapnak.<br>
+
+                        <strong> HIDEGFRONT KEDVEZŐ HATÁSA :</strong><br>
+                        A <b>hidegfronttal megérkezik a hűvösebb levegő</b>, a szél általában északi, északkeleti irányú
+                        lesz. Az
+                        átvonulás ideje alatt és közvetlenül utána azonban ismét intenzíven táplálkoznak a halak."A
+                        hidegfrontnak általában kedvező a hatása a kapásra.<br>
+
+                        <strong>ESŐKABÁTOT FEL! :</strong><br>
+
+                        Megéri megfelelő öltözékben akár záporban, zivatarban is nekiindulni. Az eső is hatással van
+                        az
+                        eredményre, oxigéndúsabb lesz a víz. A tapasztalat azt mutatja, hogy nyáron, kánikulai
+                        időben a
+                        délutáni 30 fokban többnyire hiába próbálkozunk. Egy-másfél méter mélységű tavaknál nincs
+                        sok
+                        értelme a kapásra várni, érdemes inkább hajnalban felkeresni a vízpartot.<br>
+                        <strong>A SZÉL NÖVELI A VÍZ OXIGÉNTARTALMÁT :</strong><br>
+                        A szél erőssége és iránya meghatározó a horgász számára. A legtöbben arra voksolnak, hogy
+                        erős szélben nem érdemes halfogással próbálkozni. A gyenge, vizet fodrozó szellő azonban
+                        kedvezően hathat. Régi igazság:<b> állóvizeken mindig széllel szembe érdemes bedobni a
+                            csalit</b>.
+                        Persze, minden tónál, folyónál beszélnek arról, hogy melyik szél a jó, de az is igaz, hogy a
+                        nyári hónapokban a ponty legvalószínűbben a fújás irányában lévő parthoz lesz közel,
+                        függetlenül attól, hogy a szél meleg vagy hideg. Ezt úgy is mondják, „a szél a horgászra
+                        viszi a halat”. Ennek a magyarázata lehet, hogy nyáron a víz oxigéntartalma alacsony, ezért
+                        a halak azt a helyet keresik, ahol legtöbb az oxigén. A szél fodrozza, megmozgatja a vizet,
+                        aminek következtében az oxigén eljut a mélyebb rétegekbe is.<br>
+
+                        <strong>ÁRADÁS ÉS APÁLY AZ ÉVSZÁZADOK SORÁN :</strong><br>
+                        Az áradásnak és az apadásnak is kiemelkedő szerepe van a halak étvágyára. Tavasszal és
+                        nyáron az enyhe áradás élelemszerzésre serkenti a halakat, ősszel a hasonló arányú apadásnál
+                        is eredményesen horgászhatunk.<br>
+                        <strong>MIT ESZNEK SZÍVESEN A HALAK? :</strong><br>
+                        A csali kérdésében nagyon eltérőek a vélemények, mindenki másra esküszik, mikor éppen mivel
+                        sikerült egy-egy pontyot horogra keríteni.Tapasztalataim szerint a hideg vízben édes,
+                        gyümölcsös csalival, melegben a büdösökkel lehetünk eredményesek, de mindig jó választás
+                        lehet a fűszeres is, amelyre azt szoktuk mondani: "háromévszakos". Aki ritkán pecázik, vagy
+                        több helyre is jár, s nem akar magával sokfélét vinni, annak mindenképpen ezt ajánlom.<br>
+                        <strong>FONTOS A VÍZ HŐMÉRSÉKLETE ÉS MÉLYSÉGE :</strong><br>
+                        A víz melegedésével a halak gyakrabban vesznek föl táplálékot, kivéve a túl sekély
+                        vízrészeket, pocsolyákat, ahol kánikulában akár 30 Celsius-fok fölé is emelkedhet, poshadt
+                        lesz a víz. A levegő hőmérsékletének nincs olyan nagy szerepe a halak kapókedvére, de nem
+                        hanyagolható el, hiszen a halak a legkisebb hőingadozást is megérzik, ezt a csekély
+                        ingadozást a levegő idézi elő a vízben. Érdemes figyelembe venni a vízmélységet, a kisebb
+                        tavak gyorsan felmelegszenek, míg egy jóval mélyebb bányatónál akár kánikulában is
+                        eredményesek lehetünk.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table id="table">
+            <div class="">
+
+                <fieldset id="keret-1">
+
+                    <fieldset id="keret-2">
+
+                        <video width="250" height="150" controls>
+                            <source src="/videos/Tükör és a Grószfater.mp4" type="video/mp4">
+
+                        </video>
+                        <h4>Ponty (7.5 kg.), Tükrös (3.5kg.)<br>2021. 09. 24</h4>
+
+
+                    </fieldset>
+
+                    <fieldset id="keret-2">
+
+                        <video width="250" height="150" controls>
+                            <source src="/videos/AMÚR-VÁGOTT.mp4" type="video/mp4">
+
+                        </video>
+
+                        <h4>
+                            Amúr (6.5 kg.) Dévér (3 kg.)<br>2020. Aug.
+                        </h4>
+
+
+                    </fieldset>
+
+                    <fieldset id="keret-2">
+
+                        <video width="250" height="150" controls>
+                            <source src="/videos/Hét kilós Potyesz.mp4" type="video/mp4">
+
+                        </video>
+
+                        <h4>
+                            Egy 7 kilós.<br> Kora ősszel<br>2021.Szeptember
+                        </h4>
+
+
+                    </fieldset>
+
+                    <fieldset id="keret-2">
+
+                        <video width="250" height="150" controls>
+                            <source src="/videos/A MEGSZÁLLOTT.mp4" type="video/mp4">
+
+                        </video>
+
+                        <h4>
+                            A megszállott.<br>Fogásaim :<br>2020.-2023.
+                        </h4>
+
+
+                    </fieldset>
+
+                </fieldset>
+            </div>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table id="">
+            <div class="">
+
+                <!--<fieldset id="keret-1">
+
+                    <fieldset id="keret-2">
+                        <img src="/images/img/PONTYOM-MÁSIK-8-as.jpg" width="200px" height="" alt="">
+
+                        <h4>Ponty (7.5 kg)<br>2021. 09. 24</h4>
+                        <h1>
+                            <a href="/images/img/PONTYOM-MÁSIK-8-as.jpg"><button id="foto" class="kis-gomb">Megnézem
+                                </button></a>
+
+                        </h1>
+
+                    </fieldset>
+
+                    <fieldset id="keret-2">
+                        <img src="/images/img/PONTY 6.5-ÖS.jpg" width="200px" height="" alt="">
+
+
+                        <h4>
+                            Ponty (8.5 kg)<br>2021.09. 25.
+                        </h4>
+
+                        <h1>
+                            <a href="/images/img/PONTY 6.5-ÖS.jpg"><button id="foto" class="kis-gomb">Megnézem
+                                </button></a>
+
+                        </h1>
+                    </fieldset>
+
+                    <fieldset id="keret-2">
+                        <img src="/images/img/Harcsa.jpg" width="200px" height="" alt="">
+
+                        <h4>Harcsa (8 kg)<br>2018. Augusztus</h4>
+
+                        <h1>
+                            <a href="/images/img/Harcsa.jpg"><button id="foto" class="kis-gomb">Megnézem
+                                </button></a>
+
+                        </h1>
+                    </fieldset>
+
+                    <fieldset id="keret-2">
+                        <img src="/images/img/VEGYES.jpg" width="200px" height="" alt="">
+
+                        <h4>Pár darab vegyes hal<br>2018.Junius</h4>
+                        <h1>
+                            <a href="/images/img/VEGYES-HAL.jpg"><button id="foto" class="kis-gomb">Megnézem
+                                </button></a>
+
+                        </h1>
+                    </fieldset>
+                </fieldset>-->
+            </div>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <img id="ponty" src="/images/img/MÁRNA.jpg" width="420px" height=420px">
+                    <h3>Tiszai Márna ( 2018. Jun.)</h3>
+                    <h4>TESTI FELÉPÍTÉSE</h4>
+                    <p>
+                        <b> Testi felépítése életmódjára utal</b>.<br>
+                        Majdnem hengeres alkata, izmos faroktája,
+                        a test tömegéhez mérten úszóinak nagy felülete egyértelműen arra vall,
+                        hogy gyors és tartós úszásra is képes.(Különben, ha figyelembe vesszük
+                        mindazon halfajokat, amelyek életük java részét erősebb sodrásban töltik,
+                        vagy táplálékuk megszerzéséhez hirtelenül felgyorsuló mozgásra van szükségük,
+                        többé-kevésbé megközelítik a torpedó alakot.)<br>
+
+                        Alsó állású szája, fejlett orra, ízérzékelő bimbókkal bőségesen felfegyverzett.<br>
+                        4 bajuszszála látásnak táplálkozási módjára utal. Jól fejlett szeme igazolja,<br>
+                        hogy életmegnyilvánulásaiban is lényeges szerepe van. Bizonyos,
+                        hogy ezt az áramvonalas alakot az izmoltsággal együtt év-százezredek alakí­tották ki azért,
+                        hogy halaink a sodró vizű környezetben is fenntarthassák éle­tüket.
+
+                        De ez a tétel ma már fordítva is igaz: a megszerzett testi adottságok meg­határozói
+                        a környezeti elhelyezkedésnek. A márna élete javát azért tölti gyors sodrású
+                        folyószakszokon,
+                        mert alkati adottságai az ott megvalósuló életre teszik legalkalmasabbá.
+
+                        E helyzetben még akkor is jelentős munkát végez, ha helyben állva csak dacol az áramlás
+                        erejével. Ha
+                        egy élőlénynek nagy az energiaigénye, azt fokozott táplálékmennyiséggel kell fedeznie, a
+                        megnöveke­dett anyagforgalom arányában viszont az életfolyamatokhoz több oxigénre van
+                        szüksége.
+                        E
+                        tényező-mintegy visszahatásként-újra az oxigénben dú­sabb, sebes sodrású folyószakaszok
+                        kiválasztását indokolja.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <img id="vs-" src="/images/img/AMÚR.jpg" width="420px" height=390px">
+                    <h3>Amúr ( 2020. Aug. )</h3>
+                    <p> Nevéból is kitűnik, hogy egy<b> idegenhonos</b> fajtáról beszélünk.<br> Kína északi részén és
+                        Szibériában őshonos. Nevét az Amur folyóról kapta, Oroszország és Kína határfolyójáról,
+                        melynek középső és alsó szakaszán elterjedt. Tipikusan folyóvízi, ott is a meder mély,
+                        gyors sodrású részein tartózkodik legszívesebben.
+                    </p>
+                    <h3>TESTI FELÉPÍTÉSE</h3>
+                    <p>
+                        Rendkívül izmos, nagy testű, torpedó alakú hal. Szája félig alsó állású, nagy szemei
+                        alacsonyan ülnek, ajkai vaskosak, bajusza nincs. Háta zöldesbarna, oldala a pikkelyek
+                        fekete kontúrja miatt szürkésezüst, hasa sárgásszürke színű. Úszói kissé vörhenyesek. A
+                        tejesek mellúszói tavasszal, a test felőli oldalukon érdes tapintásúak.
+                    </p>
+                    <h3>ÉLETMÓDJA, HORGÁSZATA</h3>
+                    <p>
+                        <b> Melegkedvelő faj</b>, de alkalmazkodik az alacsonyabb hőmérséklethez is.<b>Növényevő</b>,
+                        édesvízi
+                        hal, főleg fonalas algákat, lágyszárú hínárféléket, idősebb korában a nádat és különféle
+                        vízinövényeket eszik. Vannak kivételek, amiket szinte sohasem eszik, mint például a sás
+                        a sulyom és a vízitök. Vízi növényből naponta akár testtömege 140%-át is képes
+                        elfogyasztani (ez az adat a száraz növény nedves/élő állapotában sokkal több), de
+                        természetesen minél melegebb a víz, annál gyorsabb az anyagcseréje is.<br><br>
+
+                        A hagyományos pontycsalik többségével fogható, általában pontyozás közben akad horogra;
+                        szóba jöhet főtt kukorica, különféle gyurmák, giliszta, de még zöld növények, nádlevelek
+                        is.<b> Horgászatához nagy teherbírású készség használata indokolt</b>. Kedvelt horgászhal, a
+                        horgon erősen védekezik. Úszós és fenekező módszerrel egyaránt fogják. Erős ajkaival
+                        tépi le a növényi részeket, ha éhezik, képes a sást vagy a nádat is kiirtani, emiatt
+                        képes olykor a damilt is elharapni.[3] Szinte kihúzatja magát, nagy horgászélményt
+                        jelent, ahogyan védekezik a horgon.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <img id="ponty" src="/images/img/Harcsa.jpg" width="420px" height=420px">
+                    <h3>Szürke-Harcsa (2018. Aug.)</h3>
+                    <h4>TESTI FELÉPÍTÉSE</h4>
+                    <p>
+                        A<b> tiszai szürke harcsa</b>
+                        (Silurus
+                        glanis) feje
+                        nagy,
+                        széles,
+                        felülről lapított. Törzse elöl hengeres, a hasúszók mögött hirtelen elkeskenyedik,
+                        oldalról
+                        erősen
+                        lapított. Külseje a nagyon hosszú farok miatt jellegzetes. Szája nagy, a felső és az
+                        alsó
+                        állkapcson
+                        apró, hegyes fogak ülnek. A felső állkapocs szájszögletének közelében egy-egy hosszú, az
+                        alsó
+                        állkapcson pedig négy vékonyabb és sokkal rövidebb bajuszszál található. Szeme egészen
+                        kicsi. A
+                        mellúszók fejlettek, lekerekítettek, a hátúszó feltűnően rövid és alacsony. A farok
+                        alatti
+                        úszó
+                        nagyon hosszú, a végbélnyílástól a farokúszóig terjed. A farokúszó lekerekített. Teste
+                        pikkelytelen,
+                        csupasz. Színét befolyásolja a környezet, háta zöldesszürke, barnásszürke vagy teljesen
+                        fekete,
+                        amelyen márványszerű rajzolat figyelhető meg. Oldala olajzöld vagy szürke, szintén
+                        márványozott
+                        rajzokkal. Hasa fehér, sárgásfehér, kisebb-nagyobb sötétebb pontokkal. Páratlan
+                        úszói
+                        sötétszürkék,
+                        a többi világosabb. A halfaj maximális mérete reálisan 2,5 m és 120 kg. Húsminőség
+                        szempontjából
+                        <b>az
+                            1,5-5 kg közötti példányok a legértékesebbek és a legízletesebbek</b>. Fehér, kissé lágy
+                        húsa
+                        teljesen
+                        szálkamentes,<b> fehérjetartalma 16-19%25, zsírtartalma 0,8-3,5%25</b>, amely a szív- és
+                        érrendszeri
+                        betegségek megelőzésében kedvező hatású,<b> többszörösen telítetlen zsírsavat tartalmaz
+                            (6,7
+                            g/kg).</b>
+                        Kiemelkedő a harcsa húsának<b> A- (20 ľg/kg) és E-vitamin-tartalma (2,1 ľg/kg)</b>.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <img id="vs-" src="/images/img/KÁRÁSZOK.jpg" width="420px" height=420px">
+                    <h3>Kárászok, - Vegyi-kubik (2020. Ápr. )</h3>
+                    <p> <br>
+                        <b>Az ezüstkárász nem őshonos faj Európában</b>.
+                        Őshazája
+                        Kelet-Ázsia
+                        (Kína, Tajvan, Korea, Japán), valamint Szibéria (a Kolima és az Amur vízrendszere).
+                        Később
+                        az
+                        elterjedési területük Nyugat-Szibérián keresztül átterjedt Kelet-Európára, beleértve a
+                        ponto-kaszpikus területeket (Fekete-tenger és Kaszpi-tenger), illetve Délkelet-Európa
+                        nagy
+                        részére
+                        is (Románia, Bulgária, Görögország és Törökország). A 17. századtól kezdve a faj
+                        fokozatos
+                        nyugat
+                        felé történő terjeszkedése volt megfigyelhető (Szerbia, Montenegró, Horvátország,
+                        Magyarország,
+                        Szlovákia, Ausztria és Lengyelország. Az inváziós faj 1931-ben felbukkant a Balti-tenger
+                        menti
+                        államokban (Észtország, Lettország, Litvánia), 1948-ban pedig már elérte Dánia,
+                        Németország
+                        és
+                        Finnország folyóvizeit is. Az 1950-es évektől kezdve már semmi nem tudott gátat szabni a
+                        megállíthatatlanul Európa felé terjeszkedő halfaj térhódításának. Mára Európában már
+                        csak
+                        Írország,
+                        Skócia, a Skandináv-félsziget északi és keleti része, valamint Észak-Franciaország
+                        (Normandia)
+                        tekinthető ezüstkárásztól mentes területnek.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <img id="ponty" src="/images/img/VEGYES.jpg" width="420px" height=390px">
+                    <h3>Pár darab vegyes hal a Tiszából (2018.Jun. )</h3>
+                    <h5>Több fajta halra is lehet horgászni, egyazon időben.</h5>
+                    <p>
+                        Folyami halfajták .<br>
+                        Ha folyóvízen szeretnél horgászni, találkozhatsz
+                        több
+                        olyan
+                        halfajjal, amellyel tavakon nem fogsz összefutni. Ilyenek a szilvaorrú keszeg, a márna,
+                        az
+                        ingola
+                        félék és még jó néhány halfaj. Ezek a folyami halak. A folyóban horgászni nem mindig
+                        egyszerű
+                        feladat, de ha megismered azokat a halakat, amelyek folyami halfajták, megérted, hogy
+                        megéri
+                        a
+                        bosszankodás.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+
+                    <h3><a target="blank" href="/images/img/PONTYOM-8-as.jpg"><img id="vs-"
+                                src="/images/img/PONTYOM-8-as.jpg" width="420px" height=390px"></a>
+                        <a target="blank" href="/images/img/PONTYOM-8-as.jpg">Egy 6.5 kg-os Potyesz a Tiszából<br> (
+                            2021.09. 24. )</a>
+                    </h3>
+                    <p>
+                        Reggel félhétkor vetettem be a szerelést, a rádióban hírek volt. Nagy széllel érkező
+                        melegfrontot
+                        jósoltak. <br>Jött is a szél, bár nem túl erős.<br>
+                        07.25. körül, gyenge ütögetés után, erős húzás. Durr neki! Part közelig nem túlzottan
+                        harcolt,
+                        de pár méterre a parttól megindult árral szembe.20-30 métert iszkolt, azután csend.
+                        Lassan
+                        megindult vissza. Kis pumpálásokkal vontattam magam felé. A partnál megint egy ugrás, de
+                        tudtam,
+                        hogy már az enyém lesz.<br>Igaz, csak a második szákolásra, de meg lett.
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>
+                    <h3>
+                        <a target="_blank" href="/images/img/PONTY 6.5-ÖS.jpg"><img id="ponty"
+                                src="/images/img/PONTY 6.5-ÖS.jpg" width="420px" height=390px"></a>
+                        <br>
+                        <a target="blank" href="/images/img/PONTYOM-8-as.jpg">Egy 8.5 kg-os Potyesz a Tiszából<br> (
+                            2021.09. 25. )</a><br><br>
+                    </h3>
+                    <h4>A fent leírt melegfront hatása meghozta a várt
+                        eredmébyt.</h4>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table id="table-02">
+            <tr>
+                <th>
+                    <div>
+                        <h1><span id="how-color">Sikeres horgászatot kívánok!<br> Görbüljön!</span></h1>
+                        <hr>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table id="">
+
+            <div class="class">
+
+                <fieldset id="keret">
+                    <fieldset id="border">
+                        <img src="/images/img/HORG-IKON.png" width="130px" height="30px" alt="logo">
+
+
+                        <h4>Horgász-Oldalam</h4>
+                        <h6>Üdvözöllek oldalamon !</h6>
+
+                    </fieldset>
+
+                    <fieldset id="border">
+                        <img src="/images/img/Elérhetőség--.png" width="30px" height="" alt="Elérhetőségek">
+
+                        <h4>Elérhetőségek</h4>
+                        <h6>nokiatibor@gmail.com</h6>
+                        <h6>Facebook</h6>
+                        <h6>GitHub</h6>
+
+                    </fieldset>
+
+                    <fieldset id="border">
+                        <img src="/images/img/Oldalak--Ikon.png" width="30px" height="" alt="Oldalak">
+
+                        <h4>Oldalak</h4>
+                        <h6>Home</h6>
+                        <h6>Képek-Leírások</h6>
+                        <h6>Receptek</h6>
+                        <h6>Elérhetőségek</h6>
+
+
+                    </fieldset>
+
+                    <fieldset id="border">
+                        <img src="/images/img/Kapcsolódjunk-.png" width="100px" height="" alt="Kapcsolódás-ikonok">
+
+                    </fieldset>
+                
+                </fieldset>
+            </div>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <table id="table-02">
+            <tr>
+                <th>
+                    <div>
+                        <table id="gombok">
+                            <tr>
+                                <th>
+                                    <h1>
+                                        <a href="/index.html"><button class="kis-gomb">VISSZA</button></a>
+
+                                        <a href="/receptek.html"> <button class="kis-gomb">TOVÁBB</button></a>
+                                    </h1>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="wrapper">
+        <table id="table-02">
+            <tfoot>
+                <tr>
+                    <td>
+                        &copy; 2022. Hungary, Szolnok. ( Papp Tibor ) <strong>Minden jog fenntartva !</strong>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

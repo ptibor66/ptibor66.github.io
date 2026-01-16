@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: linear-gradient( rgb(160, 29, 29), rgb(252, 86, 86));
+    background-size: cover;
+    background-position: center center;
+}
+
+.box {
+    margin: 0;
+}
+
+main {
+    background-color: none;
+}
+
+#marquee {
+    margin: 130px;
+}
+
+#marquee h1 {
+    color: rgb(54, 54, 54);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(191, 191, 192);
+}
+
+#h1-center {
+    font-family: "oswald";
+    color: rgb(181, 181, 182);
+    text-align: center;
+}
+
+h2 {
+    margin: 15px;
+    font-family: "oswald";
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-family: "oswald";
+    color: rgb(93, 93, 93);
+}
+
+h5 {
+    margin: 15px;
+    font-family: "oswald";
+    font-weight: bold;
+    color: rgb(250, 249, 249);
+}
+
+p {
+    margin: 15px;
+    color: rgb(247, 244, 244);
+}
+
+.recipe-box ul li {
+    color: rgb(204, 203, 203);
+}
+
+ul li {
+    color: lavender;
+}
+
+#color {
+    font-weight: bold;
+    color: rgb(207, 206, 206);
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {position: fixed;
+    height: 60px;
+    background: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav a {
+    color: lavender;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+a:hover {
+    color: rgb(221, 221, 218);
+}
+
+#table {
+    padding: 5px;
+    max-width: 700px;
+    margin: 5px auto;
+    background: none;
+}
+
+fieldset {
+    margin: 5px;
+    background: rgb(165, 23, 13);
+}
+
+fieldset img {
+    width: 270px;
+    height: 250px;
+    float: left;
+    margin: 15px;
+}
+
+#table img {
+    margin: 5px;
+    padding: 5px;
+}
+
+#table-1 {
+    padding: 5px;
+    max-width: 700px;
+    margin: 5px auto;
+    background: none;
+}
+
+#table {
+    padding: 5px;
+    float: none;
+}
+
+h1 #logo {
+    float: left;
+}
+
+
+#logo {
+    float: right;
+}
+
+
+#fader {
+    background: lightskyblue;
+    margin: 30px;
+    padding: 30px;
+}
+
+.carousel {
+    max-width: 800px;
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 30PX 40px -20px lightgray;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(orientation:portrait) {
+    .carousel {
+        height: 30vh
+    }
+}
+
+.carousel div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+}
+
+.carousel div:nth-child(1) {
+    background-image: url(/images/img/TERÍTÉK.jpg);
+    animation-delay: 2s
+}
+
+
+.carousel div:nth-child(2) {
+    background-image: url(/images/img/HALÁSZLÉ.jpg);
+    animation-delay: 8s
+}
+
+.carousel div:nth-child(3) {
+    background-image: url(/images/img/HALKOCSONYA.gif);
+    animation-delay: 10s
+}
+
+.carousel div:nth-child(4) {
+    background-image: url(/images/img/KESZEG-ROSTON.jpg);
+    animation-delay: 12s
+}
+
+.carousel div:nth-child(5) {
+    background-image: url(/images/img/ORLY-HARCSA.jpg);
+    animation-delay: 14s
+}
+
+.carousel div:nth-child(6) {
+    background-image: url(/images/img/RÁC-PONTY.jpg);
+    animation-delay: 16s
+}
+
+.carousel div:nth-child(7) {
+    background-image: url(/images/img/SÜLLŐ-EGÉSZBEN.jpg);
+    animation-delay: 18s
+}
+
+.carousel div:nth-child(8) {
+    background-image: url(/images/img/SÜLT-KESZEG.jpg);
+    animation-delay: 20s
+}
+
+.fader div {
+    animation: fade 16s infinite
+}
+
+@keyframes fade {
+    5% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.slider div {
+    left: -100;
+    animation: slide 12s infinite
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+        left: -100%
+    }
+
+    6% {
+        left: 0;
+    }
+
+    34.5% {
+        left: 0;
+    }
+
+    39.5% {
+        opacity: 1;
+        left: 100%;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.carousel.slider {
+    animation: carousel-fade-in 2s forwards;
+}
+
+@keyframes carousel-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+button {
+    font-weight: bold;
+    width: 120px;
+    margin: 3px;
+    color: rgb(250, 250, 253);
+    padding: 5px 10px;
+    background: linear-gradient(to right, rgb(104, 1, 1), rgb(253, 90, 90));
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px rgb(70, 69, 69);
+    border: 1px solid rgb(253, 253, 253);
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(119, 1, 1), rgb(248, 91, 91));
+    font-weight: bold;
+    color: lavender;
+}
+
+button:active {
+    box-shadow: 0px 1px 7px black;
+}
+
+tfoot {
+    background: none;
+    color: rgb(186, 186, 187);
+}
+
+
+/*HEADER*/
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: rgb(15, 15, 15);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f1efef;
+}
+
+a:hover {
+    color: rgb(250, 200, 92);
+}
+
+.navbar h3 {
+    color: rgb(27, 27, 27);
+}
+
+li {
+    list-style: none;
+}
+
+.action_btn {
+    background-color: rgb(153, 153, 153);
+    color: rgb(235, 235, 241);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #90f88b;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(73, 73, 73, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #272727;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+svg {
+    color: #d4d3d3;
+}
+
+tfoot {
+    color: rgb(83, 14, 14);
+}

@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background: linear-gradient( rgb(165, 106, 18), rgb(170, 133, 53));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+#color {
+    font-weight: bold;
+    color: rgb(177, 31, 31);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f7f4f4;
+}
+
+a:hover {
+    color: rgb(155, 247, 50);
+}
+
+.navbar h3 {
+    color: rgb(20, 20, 17);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: rgb(12, 12, 12);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: rgb(184, 182, 182);
+    color: rgb(209, 209, 211);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #90f88b;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    font-weight: bold;
+    color: #1b1b1b;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+svg {
+    color: #252525;
+}
+
+#marquee {
+    margin: 30px;
+}
+
+#marquee h1 {
+    color: rgb(252, 251, 251);
+}
+
+.navline {
+    background: none;
+}
+
+li {
+    list-style: none;
+}
+
+#fader{
+    margin: 100px;
+}
+
+#pos {
+    margin: 0 -73px;
+    padding: 95px;
+}
+
+#pos h4 {
+color: #f0eeee;
+}
+
+table video {
+    padding: 57px;
+    float: left;
+}
+
+h2 {
+    padding: 100px;
+    float: right;
+}
+
+#logo {
+    width: 300px;
+    padding: 20px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transition: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(224, 220, 220);
+    margin: 27px;
+    font-weight: 70px;
+    line-height: 25px;
+}
+
+.content::after,
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*.content button {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 25px;
+    width: 120px;
+    float: left;
+    color: rgb(250, 250, 253);
+    padding: 5px 10px;
+    border: rgb(128, 126, 126) 1px solid;
+    background: linear-gradient(to right, rgb(97, 86, 24), rgb(224, 190, 38)); 
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px rgb(70, 69, 69);
+}
+
+.content button:hover {
+    background: linear-gradient( rgb(35, 63, 33), rgb(99, 167, 61)); 
+}*/
+
+.wrapper {
+    max-width: 775px;
+    margin: 35px auto;
+}
+
+table {
+    background: none;
+    max-width: 875px;
+    /*background-color: rgb(253, 225, 148);*/
+}
+
+strong {  
+    text-transform: uppercase;
+    color: white; 
+    font-weight: bold; 
+}
+
+b {
+    color: white;
+    font-weight: bold;
+}
+
+fieldset { 
+    background: linear-gradient(to right, rgb(27, 27, 27), rgb(158, 158, 158));
+    height: 300px;
+}
+
+button {
+    font-weight: bold;
+    width: 120px;
+    margin: 3px;
+    color: rgb(250, 250, 253);
+    padding: 5px 10px;
+    background: linear-gradient(to right, rgb(24, 24, 24), rgb(146, 146, 146)); 
+    border: rgb(116, 114, 114) 1px solid;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px rgb(116, 115, 115);
+    border: 1px solid rgb(253, 253, 253);
+}
+
+
+
+
+/*button {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 25px;
+    width: 120px;
+    float: left;
+    color: rgb(246, 246, 250);
+    padding: 5px 20px;
+    border: rgb(116, 114, 114) 1px solid;
+    background: linear-gradient(to right, rgb(24, 24, 24), rgb(146, 146, 146)); 
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px rgb(70, 69, 69);
+}*/
+
+button:hover {
+    color: lavender;
+    background: linear-gradient(rgb(49, 49, 49), rgb(150, 149, 149));
+}
+
+.wrapper table {
+    width: 890px;
+}
+
+h1 {
+    font-family: "oswald";
+    color: rgb(42, 42, 51);
+}
+
+h2 {
+    font-family: "oswald";
+}
+
+.wrapper h3 a {
+    color: rgb(49, 49, 165);
+}
+
+.wrapper h3 a:hover {
+    color: green;
+}
+
+h4 {
+    font-family: "oswald";
+    color: rgb(233, 230, 230);
+    text-align: left;
+}
+
+h5 {
+    text-align: left;
+    color: rgb(48, 44, 44);
+}
+
+#keret-1 h6 {
+    color: rgb(63, 63, 63);
+    margin: 10px;
+}
+
+fieldset h5 {
+    padding: 0px;
+    margin: 0 100px;
+}
+
+fieldset h6 {
+    margin: 0 100px;
+}
+
+fieldset img {
+    max-width: 300px;
+    margin: 20px;
+}
+
+#table-02 {
+    padding: 5px;
+    max-width: 500px;
+    margin: auto;
+    background: none;
+}
+
+video {
+    height: 130px;
+    width: 200px;
+}
+
+#foto {
+    width: 180px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#ponty {
+    padding: 10px;
+    margin: 0 23px;
+    float: left;
+}
+
+h3 {
+    font-family: "oswald";
+    padding: 25px;
+    color: white;
+    text-align: left;
+}
+
+p {
+    color: rgb(198, 198, 199);
+    margin: 0 -12px;
+    padding: 45px;
+    text-align: left;
+}
+
+#vs- {
+    margin: 20px;
+    margin: 20px;
+    float: right;
+}
+
+.wrapper h3 {
+    margin: 8px;
+}
+
+#sor {
+    color: black;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: left;
+}
+
+#sor-1 {
+    color: rgb(71, 71, 71);
+}
+
+#sor- {
+    margin: 0px 25px;
+    padding: 20px;
+    text-align: left;
+    color: rgb(71, 71, 71);
+}
+
+#how-color {
+    font-family: "oswald";
+    color: rgb(194, 194, 196);
+    text-align: center;
+}
+
+#gombok {
+    padding: 0 250px;
+    background: none;
+}
+
+tfoot {
+    font-weight: bold;
+    color: rgb(0, 0, 1);
+    text-align: center;
+}
+
+.carousel {
+    max-width: 1000px;
+    width: 90%;
+    height: 60vh; 
+    margin: 0 auto 0 auto;
+    box-shadow: 0 30PX 40px -20px lightgray;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(orientation:portrait) {
+    .carousel {
+        height: 30vh
+    }
+}
+
+.carousel div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+}
+
+.carousel div:nth-child(1) {
+    background-image: url(/images/img/7-es-Potyesz.jpg);
+    animation-delay: 2s
+}
+
+
+.carousel div:nth-child(2) {
+    background-image: url(/images/img/Harcsa.jpg);
+    animation-delay: 8s
+}
+
+.carousel div:nth-child(3) {
+    background-image: url(/images/img/AMÚR.jpg);
+    animation-delay: 10s
+}
+
+.carousel div:nth-child(4) {
+    background-image: url(/images/img/MÁRNA.jpg);
+    animation-delay: 12s
+}
+
+.carousel div:nth-child(5) {
+    background-image: url(/images/img/VEGYES-HAL.jpg);
+    animation-delay: 14s
+}
+
+.carousel div:nth-child(6) {
+    background-image: url(/images/img/PONTY\ 6.5-ÖS.jpg);
+    animation-delay: 16s
+}
+
+.carousel div:nth-child(7) {
+    background-image: url(/images/img/DÉVÉR.jpg);
+    animation-delay: 18s
+}
+
+.carousel div:nth-child(8) {
+    background-image: url(/images/img/KÁRÁSZOK.jpg);
+    animation-delay: 20s
+}
+
+.fader div {
+    animation: fade 16s infinite
+}
+
+@keyframes fade {
+    5% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.slider div {
+    left: -100;
+    animation: slide 12s infinite
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+        left: -100%
+    }
+
+    6% {
+        left: 0;
+    }
+
+    34.5% {
+        left: 0;
+    }
+
+    39.5% {
+        opacity: 1;
+        left: 100%;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.carousel.slider {
+    animation: carousel-fade-in 2s forwards;
+}
+
+@keyframes carousel-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.class #keret {
+    height: 317px;
+    width: 875px;
+}
+
+#keret-1 {
+    border: none;
+    background: none;
+    width: 872px;
+    height: 320px;
+}
+
+#keret-2 {
+    background: rgb(245, 245, 245);
+    height: 0px;
+    width: 200px;
+    margin: 9px;
+    float: left;
+    border-radius: 7px;
+}
+
+#keret-2 img {
+    height: 150px;
+    border-radius: 7px 7px 0px 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#keret-2 h4 {
+    margin: 25px;
+    color: #e9e6e6;
+    text-align: center;
+}
+
+#border .img {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#border {
+    border: none;
+    height: 300px;
+    background: none;
+    width: 200px;
+    margin: 5px;
+    float: left;
+}
+
+#border h4 {
+    color: lavender;
+    margin: 21px;
+}
+
+#border h6 {
+    color: whitesmoke;
+    margin: 21px;
+}
+
+/*#border a {
+    margin: 20px;
+}*/
+
+#border ul li {
+    margin: 14px;
+}
+
+#keret {
+    width: 900px;
+    height: 320px;
+}
+
+.wrapper #keret {
+    height: 420px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
